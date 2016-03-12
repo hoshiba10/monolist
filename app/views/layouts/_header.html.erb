@@ -21,7 +21,7 @@
               <li><%= link_to "ログイン", login_path %></li>
             <% else %>
               <li>
-                <%= link_to 'ランキング', '#' %>
+                <%= link_to 'ランキング', ranking_path(:id) %>
               </li>
               <li>
                 <%= link_to new_item_path do %>

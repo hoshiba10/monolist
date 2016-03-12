@@ -1,0 +1,8 @@
+<h1>持っているものランキング</h1>
+<ul>
+    <% count = 1 %>
+    <% @ranking_list.each do |r| %>
+        <%= count %> : <%= r.title %><br>
+        <% count = count + 1 %>
+    <% end %>
+</ul>
