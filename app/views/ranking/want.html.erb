@@ -2,7 +2,7 @@
 <ul>
     <% count = 1 %>
     <% @ranking_list.each do |r| %>
-        [<%= count %>]  <div class="img-wrap"> <%= link_to r.title, 'http://www.amazon.co.jp/dp/' + r.asin %><br>
+        [<%= count %>]  <div class="img-wrap"> <%= link_to r.title, r.detail_page_url %><br>
           <% if r.large_image.present? %>
             <%= image_tag(r.large_image, alt: r.title) %>
           <% else %>
